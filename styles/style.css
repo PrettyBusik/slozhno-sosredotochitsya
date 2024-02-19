@@ -4,18 +4,33 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--bg-page-color);
   margin: 10px;
- font-family: var(--font-family);
+  font-family: "IBM Plex mono", sans-serif ;
+  
 }
 
 .header .decorated-zone {
   width: 100%;
+  position: relative;
+}
 
+ .decorated-zone::before{
+content: '';
+display: block;
+width:25px ;
+height: 25px;
+border-top:1px solid #000;
+border-right:1px solid #000;
+position: absolute;
+top:10px;
+right: 10px;
 }
 
 .header__theme-menu-list {
+  margin: 65px 0 65px 285px;
   display: grid;
   justify-content: end;
-  grid-template-columns: max-content;
+  gap: 13px;
+  grid-template-columns: repeat(1, minmax(70px,70px));
 }
 
 .header__theme-menu-button {
@@ -27,7 +42,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline-offset: 5px;
+  outline-offset: 1px;
   outline: 1px solid #000;
 }
 
@@ -52,9 +67,22 @@
 }
 
 .description{
+  position: relative;
   margin-block-end: 106px;
   background-color: var(--bg-accent-color);
   font-weight: 700;
+}
+
+.description::after{
+content: '';
+display: block;
+width:25px ;
+height: 25px;
+border-bottom:1px solid #000;
+border-left:1px solid #000;
+position: absolute;
+top: 148px;
+
 }
 
 .question{
