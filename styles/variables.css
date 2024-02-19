@@ -3,9 +3,13 @@
   и их переопределение под различные устройства
 */
 :root{
-  --font-family: "IBM Plex Mono";
   --font-color:#353430;
-  --bg-page-imd: url(../images/cover-image-light.png);
+  --bg-page-img: url(../images/cover-image-light.png);
   --bg-accent-color:#FF8DCB;
+
   
+  --font-color-title:#FFC2E6;
+  --text-shadow-title: 4px 4px 0px #FF8DCB;
+  --border-color:#353430;
+  --border-color-hover: rgba(50, 49, 45, 0.40);
 }

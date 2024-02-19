@@ -2,4 +2,85 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bg-page-color);
+  margin: 10px;
+ font-family: var(--font-family);
+}
+
+.header .decorated-zone {
+  width: 100%;
+
+}
+
+.header__theme-menu-list {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: max-content;
+}
+
+.header__theme-menu-button {
+  border: none;
+  background-color: transparent;
+  font-family: var(--font-family);
+  color: var(--font-color);
+  font-size: 1rem;
+}
+
+.header__theme-menu-button:hover {
+  outline-offset: 5px;
+  outline: 1px solid #000;
+}
+
+.header__theme-menu-button:focus {
+  appearance: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline-offset: 5px;
+  border-block-end: 1px solid #000;
+}
+
+
+
+.title {
+  font-size: var(--font-size-title);
+  color: var(--font-color-title);
+  text-shadow: var(--text-shadow-title);
+  font-size: var(--font-size-title);
+  margin-block-start: 65px;
+  margin-block-end: 55px;
+}
+
+.description{
+  margin-block-end: 106px;
+  background-color: var(--bg-accent-color);
+  font-weight: 700;
+}
+
+.question{
+  font-family: var(--font-family);
+  color: var(--font-color);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-block-start:20px ;
+
+}
+
+.main__point{
+background-color: var(--bg-accent-color);
+font-size: 1rem;
+margin-block-start:20px ;
+margin-block-end:10px ;
+}
+
+.advise{
+  background-color: var(--bg-accent-color);
+font-size: 1rem;
+font-weight:normal;
+margin-block-start:20px ;
+margin-block-end:10px ;
+}
+
+.pictures{
+  width: 100%;
 }
