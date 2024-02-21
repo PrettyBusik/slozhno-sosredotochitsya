@@ -2,65 +2,63 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: var( --bg-page-img);
+  background-image: var(--bg-page-img);
   background-size: cover;
-  background-position: center ;
+  background-position: center;
   padding: 10px;
-  font-family: "IBM Plex mono", sans-serif ;
+  font-family: "IBM Plex mono", sans-serif;
 }
 
-.header  {
+.header {
   width: 100%;
   position: relative;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
-} 
+}
 
 .header__theme-menu-list {
-  margin: 66px 0 0 295px;
+  margin: 18% 0 0 80%;
   display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 13px;
-  grid-template-columns: repeat(1, minmax(70px,70px));
+  gap: 11px;
+  grid-template-columns: repeat(1, 1fr);
 }
 
-.decorated-zone::before{
-content: '';
-display: block;
-width:25px ;
-height: 25px;
-border-top:1px solid var(--border-color);
-border-right:1px solid var(--border-color);
-position: absolute;
-top:0;
-right: 0;
-}
-
-.decorated-zone::after{
+.decorated-zone::before {
   content: '';
   display: block;
-  width:25px ;
+  width: 25px;
   height: 25px;
-  border-bottom:1px solid var(--border-color);
-  border-left:1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.decorated-zone::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
   position: absolute;
   bottom: 0;
   left: 0;
-  }
-
+}
 
 .header__theme-menu-button {
   border: none;
   background-color: transparent;
-  font-family: var(--font-family);
   color: var(--font-color);
-  font-size: 1rem;
+  font-size: 1.125rem;
+  padding-inline-start: 13px;
+  padding-inline-end: 13px;
 }
 
 .header__theme-menu-button:hover {
   outline-offset: 1px;
-  outline: 1px solid #000;
+  outline: 1px solid var(--border-color-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -69,57 +67,81 @@ right: 0;
 
 .header__theme-menu-button:focus-visible {
   outline-offset: 5px;
-  border-block-end: 1px solid #000;
+  border-block-end: 1px solid var(--border-color-hover);
 }
 
-
-
 .title {
-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-line-height: 83%;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
   color: var(--font-color-title);
   text-shadow: var(--text-shadow-title);
   margin-block-start: 55px;
   margin-block-end: 55px;
 }
 
-.description{
+.description {
   color: var(--font-color);
   font-size: 1.125rem;
   position: relative;
   margin-block-end: 56px;
   background-color: var(--bg-accent-color);
   font-weight: 700;
-  line-height: 23.4px; 
+  line-height: 23.4px;
   width: 100%;
 }
 
+.constant-layout{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
 
+.changable-layout{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
 
-.question{
+.question {
   color: var(--font-color);
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 700;
-  margin-block-start:20px ;
-  line-height: 130%; 
+  line-height: 130%;
+  margin: 50px 0 0 0;
 }
 
-.main__point{
-background-color: var(--bg-accent-color);
-font-size: 1rem;
-margin-block-start:20px ;
-margin-block-end:10px ;
-line-height: 23.4px; 
-}
-
-.advise{
+.main__point {
   background-color: var(--bg-accent-color);
-font-size: 1rem;
-font-weight:normal;
-margin-block-start:20px ;
-margin-block-end:10px ;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-block-start: 20px;
+  margin-block-end: 10px;
+  line-height: 23.4px;
+}
+
+.text{
+font-size: 1.125rem;
+line-height:23.4px ;
+margin: 0;
+}
+
+ .normal-text{
+  font-weight: normal;
+}
+
+.advise {
+  background-color: var(--bg-accent-color);
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
 }
 
 .pictures{
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
+
+
+
+.constant-layout:last-of-type .text:last-child {
+  margin: 30px 0 0 0;
+} 
