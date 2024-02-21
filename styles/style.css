@@ -2,18 +2,30 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-color: var(--bg-page-color);
+  background-image: var( --bg-page-img);
+  background-size: cover;
+  background-position: center ;
   padding: 10px;
   font-family: "IBM Plex mono", sans-serif ;
-  
 }
 
-.header .decorated-zone {
+.header  {
   width: 100%;
   position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+} 
+
+.header__theme-menu-list {
+  margin: 66px 0 0 295px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  grid-template-columns: repeat(1, minmax(70px,70px));
 }
 
- .decorated-zone::before{
+.decorated-zone::before{
 content: '';
 display: block;
 width:25px ;
@@ -21,18 +33,22 @@ height: 25px;
 border-top:1px solid var(--border-color);
 border-right:1px solid var(--border-color);
 position: absolute;
-top:10px;
-right: 10px;
+top:0;
+right: 0;
 }
 
-.header__theme-menu-list {
-  margin: 72px 0 0 285px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 13px;
-  grid-template-columns: repeat(1, minmax(70px,70px));
-}
+.decorated-zone::after{
+  content: '';
+  display: block;
+  width:25px ;
+  height: 25px;
+  border-bottom:1px solid var(--border-color);
+  border-left:1px solid var(--border-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  }
+
 
 .header__theme-menu-button {
   border: none;
@@ -64,28 +80,21 @@ line-height: 83%;
   color: var(--font-color-title);
   text-shadow: var(--text-shadow-title);
   margin-block-start: 55px;
-  margin-block-end: 40px;
+  margin-block-end: 55px;
 }
 
 .description{
+  color: var(--font-color);
+  font-size: 1.125rem;
   position: relative;
-  margin-block-end: 106px;
+  margin-block-end: 56px;
   background-color: var(--bg-accent-color);
   font-weight: 700;
   line-height: 23.4px; 
+  width: 100%;
 }
 
-.description::after{
-content: '';
-display: block;
-width:25px ;
-height: 25px;
-border-bottom:1px solid var(--border-color);
-border-left:1px solid var(--border-color);
-position: absolute;
-top: 148px;
 
-}
 
 .question{
   color: var(--font-color);

@@ -37,6 +37,6 @@
 
 @media(prefers-color-scheme: light) {
   .decoration-element{
-    appearance: none;
+    display: none;
   }
 }
