@@ -328,7 +328,7 @@
   }
 }
 
-@container(inline-size>=1004px) {
+@container(inline-size>=950px) {
   .footer__wraper{
     height: 728px;
     padding: 20px;
