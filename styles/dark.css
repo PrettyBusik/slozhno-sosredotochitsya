@@ -22,6 +22,11 @@
   --border-color-hover: rgba(255, 0, 112, 0.40);
 }
 
+
+.page.theme_dark .decoration-element{
+  display: block;
+}
+
 @media(prefers-color-scheme: dark) {
   :root {
     --font-color: #F1B2CE;
@@ -34,5 +39,9 @@
     --text-shadow-title: 4px 4px 0px #FF0070;
     --border-color: #FF0070;
     --border-color-hover: rgba(255, 0, 112, 0.40);
+  }
+
+  .decoration-element{
+    display: block;
   }
 }

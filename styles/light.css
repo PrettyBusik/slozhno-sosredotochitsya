@@ -22,6 +22,10 @@
   --border-color-hover: rgba(50, 49, 45, 0.40);
 }
 
+.page.theme_light .decoration-element{
+    display: none;
+  } 
+
 @media(prefers-color-scheme: light) {
   :root {
     --font-color: #353430;
@@ -35,10 +39,9 @@
     --border-color: #353430;
     --border-color-hover: rgba(50, 49, 45, 0.40);
   }
-}
 
- @media(prefers-color-scheme: light) {
   .decoration-element{
     display: none;
   }
-}   
+}
+

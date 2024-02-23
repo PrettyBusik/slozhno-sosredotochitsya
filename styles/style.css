@@ -9,6 +9,7 @@
   width: 100%;
   padding: 10px;
   font-family: "IBM Plex mono", sans-serif;
+  font-weight: 400;
   color: var(--font-color);
   font-size: 1.125rem;
   line-height: 23.4px;
@@ -81,15 +82,25 @@
   left: 0;
 }
 
- /* .decoration-element::after{
-content: "REC *";
-width: 100px;
-height: 100px;
+ .decoration-element{
 position: absolute;
+
 top: 0;
 right: 0;
 color: var(--bg-accent-color);
-}   */
+}  
+
+.decoration-element::after{
+  content:"" ;
+  display: inline-block;
+  width:9px;
+  height: 9px;
+  margin-inline-end: 10px;
+  background-color: var(--bg-accent-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px var(--bg-accent-color);
+
+}
 
 .header__theme-menu-button {
   width: 70px;
@@ -184,6 +195,23 @@ color: var(--bg-accent-color);
 .text {
   color: var(--font-color);
   margin: 0;
+}
+
+.link{
+  text-shadow: 2px 2px  var(--bg-accent-color);
+  text-decoration: none;
+}
+
+.link:hover{
+  border-block-end: 1px solid var(--font-color);
+}
+
+.link:focus{
+  appearance: none;
+}
+
+.link:focus{
+  outline: 1px solid var(--font-color);
 }
 
 @container(inline-size>=728px) {
