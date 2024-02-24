@@ -7,7 +7,7 @@
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  padding: 10px;
+  padding-inline: 10px;
   font-family: "IBM Plex mono", sans-serif;
   font-weight: 400;
   color: var(--font-color);
@@ -16,17 +16,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  container-type: inline-size;
 }
 
 @media (width>=728px) {
   .page {
-    padding: 20px;
+    padding-inline: 20px;
   }
 
 }
 
 .header {
-  height: 100vh;
+  margin-block-start: 10px;
+  height: 100svh;
   position: relative;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
@@ -43,6 +45,10 @@
 }
 
 @container (inline-size>=728px) {
+  .header {
+    margin-block-start: 20px;
+  }
+
   .header__theme-menu-list {
     height: 443px
   }
@@ -354,8 +360,9 @@
 
 
 .footer {
-  height: 100vh;
+  height: 100svh;
   container-type: inline-size;
+  margin-block-end: 10px;
 }
 
 .footer__wraper {
@@ -368,6 +375,10 @@
 }
 
 @container(inline-size>=728px) {
+  .footer {
+    margin-block-end: 20px;
+  }
+
   .footer__wraper {
     height: 984px;
     padding: 20px;
@@ -376,6 +387,10 @@
 
 
 @container(inline-size>=950px) {
+  .footer {
+    margin-block-end: 20px;
+  }
+
   .footer__wraper {
     height: 728px;
     padding: 20px;
