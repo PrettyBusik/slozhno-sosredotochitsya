@@ -11,6 +11,7 @@
   */
 
   --font-color: #F1B2CE;
+  --font-color-description: #000028;
   --bg-page-img: url(../images/cover-image-dark.png);
   --bg-accent-color: #FF0070;
   --border-color: #FF0070;
@@ -30,6 +31,7 @@
 @media(prefers-color-scheme: dark) {
   :root {
     --font-color: #F1B2CE;
+    --font-color-description: #000028;
     --bg-page-img: url(../images/cover-image-dark.png);
     --bg-accent-color: #FF0070;
     --border-color: #FF0070;

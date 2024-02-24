@@ -11,6 +11,7 @@
   */
 
   --font-color: #353430;
+  --font-color-description: #353430;
   --bg-page-img: url(../images/cover-image-light.png);
   --bg-accent-color: #FF8DCB;
   --border-color: #353430;
@@ -29,6 +30,7 @@
 @media(prefers-color-scheme: light) {
   :root {
     --font-color: #353430;
+    --font-color-description: #353430;
     --bg-page-img: url(../images/cover-image-light.png);
     --bg-accent-color: #FF8DCB;
     --border-color: #353430;
