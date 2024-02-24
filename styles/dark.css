@@ -23,7 +23,7 @@
 }
 
 
-.page.theme_dark .decoration-element{
+.page.theme_dark .decoration-element {
   display: block;
 }
 
@@ -41,7 +41,7 @@
     --border-color-hover: rgba(255, 0, 112, 0.40);
   }
 
-  .decoration-element{
+  .decoration-element {
     display: block;
   }
 }
