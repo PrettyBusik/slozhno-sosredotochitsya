@@ -181,7 +181,7 @@
 .constant-layout {
   display: grid;
   grid-template-columns: 1 1fr;
-  margin-block-start: 10px;
+  margin-block-start: 30px;
 }
 
 .question {
@@ -227,7 +227,7 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     gap: 20px;
-    margin-block-start: 20px;
+    margin-block-start: 50px;
     margin-block-end: 80px;
   }
 
@@ -244,7 +244,8 @@
 .changable-layout {
   display: grid;
   grid-template-columns: 1fr;
-  
+  margin-block-start: 50px;
+  margin-block-end: 50px;
 }
 
 @container(inline-size>=728px) {
@@ -366,6 +367,7 @@
 }
 
 .footer__wraper {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
