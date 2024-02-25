@@ -18,7 +18,7 @@
   container-type: inline-size;
 }
 
-.header{
+.header {
   height: 100svh;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
@@ -62,6 +62,25 @@
   left: 10px;
 }
 
+.decoration-element {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--bg-accent-color);
+}
+
+.decoration-element::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-inline-end: 10px;
+  background-color: var(--bg-accent-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px var(--bg-accent-color);
+
+}
+
 @container (inline-size>=728px) {
   .header {
     padding: 20px;
@@ -69,30 +88,23 @@
 
   .header.decorated-zone::before,
   .footer.decorated-zone::before {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 
-.header.decorated-zone::after,
-.footer.decorated-zone::after {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-}
+  .header.decorated-zone::after,
+  .footer.decorated-zone::after {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
 
+  .decoration-element {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
 
 @container (inline-size>=984px) {
@@ -106,7 +118,7 @@
   width: 70px;
   border: none;
   background-color: transparent;
-  color: var(--font-color);
+  color: var(--button-text-color);
   font-size: 1.125rem;
   padding-inline-start: 13px;
   padding-inline-end: 13px;
@@ -158,32 +170,16 @@
     font-size: clamp(7.5rem, 0.5262rem + 14.5098vw, 9.8125rem);
   }
 
-  .header .title{
+  .header .title {
     margin-inline-start: -20px;
   }
+
   .description {
     width: 50%;
   }
 }
 
-.decoration-element {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: var(--bg-accent-color);
-}
 
-.decoration-element::after {
-  content: "";
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin-inline-end: 10px;
-  background-color: var(--bg-accent-color);
-  border-radius: 50%;
-  box-shadow: 0px 0px 50px var(--bg-accent-color);
-
-}
 
 .main {
   container-type: inline-size;
@@ -198,13 +194,13 @@
 }
 
 .question {
-  color: var(--font-color);
+  color: var(--font-color-question);
   font-size: 1.125rem;
   font-weight: 700;
 }
 
 .main__point {
-  color: var(--font-color);
+  color: var(--font-color-description);
   font-size: 1.125rem;
   font-weight: 700;
   background-color: var(--bg-accent-color);
@@ -235,7 +231,7 @@
 }
 
 @container(inline-size>=728px) {
-  .main{
+  .main {
     padding-inline: 20px;
   }
 
@@ -248,7 +244,7 @@
     margin-block-end: 80px;
   }
 
-  .main__point{
+  .main__point {
     margin-block-start: 0;
   }
 }
@@ -286,7 +282,7 @@
 }
 
 .advise {
-  color: var(--font-color);
+  color: var(--font-color-description);
   font-size: 1.125rem;
   font-weight: 700;
   background-color: var(--bg-accent-color);
@@ -306,7 +302,7 @@
 }
 
 .question-and-main-point {
-  color: var(--font-color);
+  color: var(--font-color-description);
   font-size: 1.125rem;
   font-weight: 700;
   background-color: var(--bg-accent-color);
