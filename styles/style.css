@@ -361,13 +361,12 @@
 
 
 .footer {
-  height: 100svh;
+  height: calc(100svh -20px);
   container-type: inline-size;
   margin-block-end: 10px;
 }
 
 .footer__wraper {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
