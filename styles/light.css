@@ -14,7 +14,7 @@
   --font-color-description: #353430;
   --font-color-question: #353430;
   --bg-page-img: url(../images/cover-image-light.png);
-  --background-color:#FFC2E6;
+  --background-color: #FFC2E6;
   --bg-accent-color: #FF8DCB;
   --button-text-color: #353430;
   --border-color: #353430;
@@ -32,11 +32,11 @@
 }
 
 @media(prefers-color-scheme: light) {
-  :root{
-      --font-color: #353430;
+  :root {
+    --font-color: #353430;
     --font-color-description: #353430;
     --bg-page-img: url(../images/cover-image-light.png);
-    --background-color:#FFC2E6;
+    --background-color: #FFC2E6;
     --bg-accent-color: #FF8DCB;
     --border-color: #353430;
 
