@@ -41,7 +41,7 @@
 @media(prefers-color-scheme: dark) {
   :root {
     --font-color: #F1B2CE;
-    --font-color-description: #000028; 
+    --font-color-description: #000028;
     --font-color-question: #FF0070;
     --bg-page-img: none;
     --background-color: #000028;
