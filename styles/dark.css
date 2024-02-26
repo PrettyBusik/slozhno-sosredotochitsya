@@ -14,10 +14,12 @@
   --font-color-description: #000028;
   --font-color-question: #FF0070;
   --bg-page-img: url(../images/cover-image-dark.png);
-  --backgraund-color: #000028;
+  --background-color: #000028;
   --bg-accent-color: #FF0070;
   --button-text-color: #FF0070;
   --border-color: #FF0070;
+
+
 
 
   --font-color-title: #DB00FF;
@@ -36,6 +38,7 @@
     --font-color: #F1B2CE;
     --font-color-description: #000028;
     --bg-page-img: url(../images/cover-image-dark.png);
+    --background-color: #000028;
     --bg-accent-color: #FF0070;
     --border-color: #FF0070;
 
