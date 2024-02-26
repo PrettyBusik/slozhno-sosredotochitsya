@@ -37,11 +37,8 @@
 }
 
 
-.decorated-zone-top{
-  position: relative;
-}
-
-.decorated-zone-top::before {
+.header.decorated-zone::before,
+.footer.decorated-zone::before {
   content: '';
   display: block;
   width: 25px;
@@ -53,11 +50,8 @@
   right: 10px;
 }
 
-.decorated-zone-bottom{
-  position: relative;
-}
-
-.decorated-zone-bottom::after {
+.header.decorated-zone::after,
+.footer.decorated-zone::after {
   content: '';
   display: block;
   width: 25px;
