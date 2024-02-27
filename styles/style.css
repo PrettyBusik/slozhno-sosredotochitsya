@@ -113,7 +113,6 @@
 }
 
 .header__theme-menu-button {
-    width: 70px;
     border: none;
     background-color: transparent;
     color: var(--button-text-color);
