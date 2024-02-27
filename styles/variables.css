@@ -10,12 +10,10 @@
   --background-color: #FFC2E6;
   --bg-accent-color: #FF8DCB;
   --button-text-color: #353430;
-  --border-color: #353430;
-
 
 
   --font-color-title: #FFC2E6;
-  --text-shadow-title: #FF8DCB;
+  --text-shadow-color: #FF8DCB;
   --border-color: #353430;
   --border-color-hover: rgba(50, 49, 45, 0.40);
 }

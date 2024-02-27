@@ -17,13 +17,12 @@
   --background-color: #000028;
   --bg-accent-color: #FF0070;
   --button-text-color: #FF0070;
-  --border-color: #FF0070;
 
 
 
 
   --font-color-title: #DB00FF;
-  --text-shadow-title: 4px 4px 0px #FF0070;
+  --text-shadow-color:  #FF0070;
   --border-color: #FF0070;
   --border-color-hover: rgba(255, 0, 112, 0.40);
 }
@@ -37,15 +36,14 @@
     --font-color: #F1B2CE;
     --font-color-description: #000028;
     --font-color-question: #FF0070;
-    --bg-page-img: none;
+    --bg-page-img: url(../images/cover-image-dark.png);
     --background-color: #000028;
     --bg-accent-color: #FF0070;
     --button-text-color: #FF0070;
-    --border-color: #FF0070;
 
 
     --font-color-title: #DB00FF;
-    --text-shadow-title: 4px 4px 0px #FF0070;
+    --text-shadow-color: #FF0070;
     --border-color: #FF0070;
     --border-color-hover: rgba(255, 0, 112, 0.40);
   }
